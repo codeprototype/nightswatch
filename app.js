@@ -6,8 +6,8 @@ import path from "path";
 const dirname = path
   .dirname(new URL(import.meta.url).pathname)
   .split("/development")
-  .pop();
-app.use(cors());
+  .pop() || "";
+  app.use(cors());
 
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
     message: `Healthcheck OK, Service Name:${dirname}`,
   });
 });
-
+console.log(`Healthcheck OK, Service Name:${dirname}`)
 
 const PORT = process.env.PORT || 9005;
 
