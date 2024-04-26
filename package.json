@@ -1,7 +1,6 @@
 {
-  "name": "nightswatch",
+  "name": "@maaz4/nightswatch",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "type": "module",
   "dependencies": {
@@ -17,5 +16,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeprototype/nightswatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codeprototype/nightswatch/issues"
+  },
+  "homepage": "https://github.com/codeprototype/nightswatch#readme",
+  "description": ""
 }
