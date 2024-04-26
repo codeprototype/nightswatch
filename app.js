@@ -16,8 +16,7 @@ app.get("/", (req, res) => {
     message: `Healthcheck OK, Service Name:${dirname}`,
   });
 });
-// import chatRoute from "./routes/chatRoutes.js"
-// app.use(chatRoute)
+
 
 const PORT = process.env.PORT || 9005;
 
