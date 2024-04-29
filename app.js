@@ -17,7 +17,10 @@ app.get("/", (req, res) => {
   });
 });
 console.log(`Healthcheck OK, Service Name:${dirname}`)
-
+function helloNpm() {
+  return "hello NPM"
+}
 const PORT = process.env.PORT || 9005;
 
 app.listen(PORT, () => console.log("Server running at port " + PORT));
+export { helloNpm }
