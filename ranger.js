@@ -1,6 +1,12 @@
 import jwt from "jsonwebtoken";
-function rangers(token, secret = "the king in the north") {
-  return jwt.verify(token, secret);
-}
+
+const rangers = async (token, secret = "the king in the north") => {
+  try {
+    await jwt.verify(token, secret);
+    return true; // Return true if verification succeeds
+  } catch (error) {
+    return false; // Return false if verification fails
+  }
+};
 
 export default rangers;
